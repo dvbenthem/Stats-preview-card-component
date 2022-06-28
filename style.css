@@ -89,7 +89,7 @@ ul{
   max-width: 40ch;
   color: var(--white-transparent-main);
   margin-bottom: 6rem;
-  font-weight: 200;
+  font-weight: 300;
 }
 .card-stats{
   display: flex;
@@ -102,8 +102,8 @@ ul{
 .card-stats li > span{
   display: block;
   text-transform: uppercase;
-  font-family: "Lexend Dexa";
-  font-weight: 100;
+  font-family: "Lexend Deca";
+  font-weight: 300;
   margin-top: .6rem;
   color: var(--white-transparent-stats);
   font-size: 1.4rem;
