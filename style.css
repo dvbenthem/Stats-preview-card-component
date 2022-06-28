@@ -1,0 +1,157 @@
+/* FONT STYLES */
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(../../Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(../../Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+  font-weight: 400;
+}
+
+/* CUSTOM PROPERTIES */
+:root{
+  /* primary colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  /* neutral colors */
+  --very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  --very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* GLOBAL STYLES */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* console.log of css */
+  /* outline: 2px solid tomato !important; */
+  /* background-color: rgba(255, 0, 0, 0.05) !important; */
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: "Lexend Deca";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--very-dark-blue-mainbg);
+  font-weight: 400;
+}
+p{
+  font-size: 1.8rem;
+}
+img{
+  max-width: 100%;
+  display: block;
+}
+.card{
+  background-color: var(--very-dark-blue-cardbg);
+  width: 35rem;
+  border-radius: 10px;
+  padding: 2.4rem;
+  box-shadow: 0 0 15px 10px hsla(0, 0%, 0%, .05);
+}
+.image-container{
+  position: relative;
+}
+.equilibrium-img{
+  border-radius: 10px;
+}
+.overlay{
+  background-color: var(--cyan);
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  opacity: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: all 250ms;
+}
+.image-container:hover .overlay{
+  opacity: .4;
+}
+.card-title{
+  margin: 1.8rem 0;
+}
+.card-title a:link,
+.card-title a:active{
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+  margin: 1.8rem 0;
+  transition: all 250ms;
+}
+.card-title a:hover{
+  color: var(--cyan);
+}
+.card-description{
+  color: var(--soft-blue);
+  margin-bottom: 2.4rem;
+  font-weight: 200;
+  font-size: initial;
+  line-height: 1.6;
+}
+.nft-info{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.4rem;
+}
+.amount{
+  color: var(--cyan);
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1rem;
+}
+.days-left{
+  color: var(--soft-blue);
+  display: flex;
+  gap: 1rem;
+}
+.days-left span{
+  font-size: 1.6rem;
+}
+.author{
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--very-dark-blue-line);
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.author img{
+  width: 11%;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1.6rem;
+}
+.author h3{
+  color: var(--soft-blue);
+  font-size: initial;
+  font-weight: 100;
+}
+.author h3 span{
+  color: var(--white);
+}
+.author a{
+  color: var(--white);
+  text-decoration: none;
+  transition: all 250ms;
+}
+.author a:hover{
+  color: var(--cyan);
+}
+
+
+/* FOOTER LIKE  */
+.attribution { color: var(--soft-blue); font-size: 11px; text-align: center; }
+.attribution a { color: hsl(178, 100%, 50%); text-decoration: none; }
