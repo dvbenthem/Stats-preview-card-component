@@ -113,7 +113,7 @@ ul{
   display: block;
   text-transform: uppercase;
   font-family: "Lexend Deca";
-  font-weight: 400;
+  font-weight: 100;
   margin-top: .6rem;
   color: var(--white-transparent-stats);
   font-size: 1.3rem;
